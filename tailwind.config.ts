@@ -9,10 +9,23 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'bg-grad': 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,18,50,1) 0%, rgba(1,1,28,1) 100%)'
       },
+      fontFamily: {
+        'themeFont': ['var(--font-fira)']
+      },
+      colors:{
+        'themeColor' : '#64ffda'
+      },
+      screens:{
+        'xs' : '0px',
+        'sm' : '420px',
+        'md' : '760px',
+        'lg' : '1000px',
+        'xl' : '1280px',
+        '2xl' : '1536px',
+        '3xl' : '2000px',
+      }
     },
   },
   plugins: [],
