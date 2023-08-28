@@ -1,11 +1,11 @@
 import Navbar from '@components/Home/navbar'
-import HomeComponent from '@components/Home/homeComponent'
+import PageBottom from '@components/Home/pageBottom'
 
 export default function Home() {
   return (
     <main className=''>
       <Navbar />
-      <HomeComponent />
+      <PageBottom />
     </main>
   )
 }
