@@ -26,7 +26,7 @@ const config: Config = {
         'md' : '760px',
         'lg' : '1000px',
         'xl' : '1280px',
-        '2xl' : '1536px',
+        '2xl' : '1606px',
         '3xl' : '2000px',
       }
     },

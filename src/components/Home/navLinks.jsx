@@ -1,6 +1,6 @@
 const NavLinks = (props = {}) => {
   return (
-    <section className={`${props.className} gap-7 xs:text-md md:text-sm font-themeFont items-center`}>
+    <section className={`${props.className} gap-7 xs:text-md md:text-sm font-themeFont items-center 2xl:text-xl 2xl:gap-9`}>
       <section className="cursor-pointer flex xs:flex-col items-center md:flex-row gap-2">
         <p className="text-themeColor text-opacity-90">01.</p>
         <p className="text-lightColor hover:text-themeColor text-opacity-90">About</p>
