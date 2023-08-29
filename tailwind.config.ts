@@ -15,11 +15,14 @@ const config: Config = {
         'themeFont': ['var(--font-fira)']
       },
       colors:{
-        'themeColor' : '#64ffda'
+        'themeColor' : '#64ffda',
+        'lightColor' : '#ccd6f6',
+        'darkColor' : '#8892b0',
       },
       screens:{
         'xs' : '0px',
         'sm' : '420px',
+        'smd' : '500px',
         'md' : '760px',
         'lg' : '1000px',
         'xl' : '1280px',

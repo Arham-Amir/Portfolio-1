@@ -5,7 +5,7 @@ import NavLinks from '@components/Home/navLinks'
 const Navbar = () => {
   const [ham, showHam] = useState(false);
   return (
-    <section className="xs:fixed w-full xs:top-0 shadow-md backdrop-blur-sm z-10 h-28 mb-10 px-2 bg-bg-grad/90">
+    <section className="w-full z-20 h-[17vh] px-2 bg-bg-grad/90">
       <section className="relative h-full flex items-center text-themeColor justify-between">
         <h1 className="pl-10 xs:-translate-x-6 md:-translate-x-0 duration-200">
           <svg className="h-[50px] hover:-translate-x-1 hover:-translate-y-1 ease-in-out transition duration-300 cursor-pointer"
@@ -20,7 +20,7 @@ const Navbar = () => {
 
           <p className={`${ham ? 'w-8 rotate-[405deg] -translate-y-[19px]' : 'w-5'} transition-all duration-500   p-[1px] bg-themeColor`}></p>
         </section>
-        <NavLinks className={`xs:flex ${ham ? 'xs:right-0' : 'xs:right-[-100%]'} md:hidden
+        <NavLinks className={`xs:flex ${ham ? 'xs:right-0' : 'xs:right-[-100%]'} z-20 md:hidden
         fixed top-0 h-screen sm:w-4/5 xs:w-2/3 transition-all duration-500 justify-center bg-[#112240] flex-col`} />
       </section>
     </section>

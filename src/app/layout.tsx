@@ -1,6 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter, Fira_Mono } from 'next/font/google'
+import { Inter, Fira_Mono} from 'next/font/google'
 import StoreProvider from '@redux/storeProvider'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -25,6 +25,8 @@ export default function RootLayout({
       <body className={`${inter.className} ${fira.variable}  bg-bg-grad`}>
         <StoreProvider>
           {children}
+          <h1></h1>
+          <h2></h2>
         </StoreProvider>
       </body>
     </html>
