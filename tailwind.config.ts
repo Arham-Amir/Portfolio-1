@@ -8,9 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'bg-grad': 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,18,50,1) 0%, rgba(1,1,28,1) 100%)'
-      },
       fontFamily: {
         'themeFont': ['var(--font-fira)']
       },
@@ -18,6 +15,7 @@ const config: Config = {
         'themeColor' : '#64ffda',
         'lightColor' : '#ccd6f6',
         'darkColor' : '#8892b0',
+        'bg-grad': '#0a192f',
       },
       screens:{
         'xs' : '0px',

@@ -25,8 +25,6 @@ export default function RootLayout({
       <body className={`${inter.className} ${fira.variable}  bg-bg-grad`}>
         <StoreProvider>
           {children}
-          <h1></h1>
-          <h2></h2>
         </StoreProvider>
       </body>
     </html>
