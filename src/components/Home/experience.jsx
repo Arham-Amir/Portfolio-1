@@ -10,12 +10,11 @@ const Experience = (props = {}) => {
     setcurexp(id);
   }
   return (
-    <section className={`${props.className} xl:py-20 xs:py-20 flex justify-end`}>
+    <section className={`${props.className} xl:py-24 xs:py-20 flex justify-end`}>
       <article className="h-full transition-all duration-150 xs:w-full xl:w-[87%] flex flex-col xl:p-7">
         <section className="mb-10 cursor-pointer flex items-center flex-row gap-3 font-bold transition-all duration-150 xs:w-full md:w-[75%]">
-          <p className="text-themeColor text-opacity-90 text-2xl font-normal">02.</p>
           <p className="text-lightColor hover:text-themeColor text-opacity-90 text-3xl ">
-            Where I've Worked</p>
+          <span className="text-themeColor text-opacity-90 text-2xl font-normal mr-2">02.</span>Where I've Worked</p>
           <span className="bg-darkColor h-[1px] flex-1"></span>
         </section>
         <section className="flex xs:flex-col smd:flex-row text-darkColor gap-6">

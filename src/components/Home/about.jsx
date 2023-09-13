@@ -4,12 +4,11 @@ import { AiFillCaretRight } from 'react-icons/ai'
 
 const About = (props = {}) => {
   return (
-    <section className={`h-auto xl:py-20 xs:py-20 w-full transition-all duration-150`}>
+    <section className={`h-auto xl:py-24 xs:py-20 w-full transition-all duration-150`}>
       <article className="h-full transition-all duration-150 xl:w-[90%] mx-auto flex flex-col xl:p-7">
         <section className="cursor-pointer mb-10 flex items-center flex-row gap-3 font-bold transition-all duration-150 xs:w-full md:w-[58%]">
-          <p className="text-themeColor text-opacity-90 text-xl">01.</p>
           <p className="text-lightColor hover:text-themeColor text-opacity-90 text-3xl ">
-            About Me</p>
+          <span className="text-themeColor text-opacity-90 text-xl mr-2">01.</span>About Me</p>
           <span className="bg-darkColor h-[1px] flex-1"></span>
         </section>
         <section className='flex transition-all duration-150 md:flex-row xs:flex-col xs:items-center md:items-start'>
