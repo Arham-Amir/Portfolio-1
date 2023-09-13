@@ -9,7 +9,24 @@
 }
 
 @layer utilities {
-  .text-verticle{
+  .text-verticle {
     writing-mode: vertical-rl;
   }
+
+  /* scrollbar start  */
+  .custom-scrollbar {
+    overflow-x: scroll;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    @apply w-1 h-2;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-slate-500;
+    border-radius: 4px;
+  }
+
+  /* scrollbar end  */
+
 }

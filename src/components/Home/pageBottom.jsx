@@ -1,11 +1,8 @@
-'use client'
-import { useSelector } from 'react-redux'
 import LeftSocialIcons from '@components/Home/leftSocialIcons'
 import RightGmailLink from '@components/Home/rightGmailLink'
 
 
 const PageBottom = (props = {}) => {
-  // const name = useSelector(state => state.userInfo.name)
   return (
     <section className='xs:hidden text-white md:block relative'>
       <LeftSocialIcons className="md:w-[9vw] md:fixed left-0 md:h-[83vh] flex md:flex-col items-center md:justify-end" />
