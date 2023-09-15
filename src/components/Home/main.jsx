@@ -2,6 +2,7 @@ import HeroSection  from '@components/Home/heroSection'
 import About  from '@components/Home/about'
 import Experience  from '@components/Home/experience'
 import MainProjects  from '@components/Home/mainProjects'
+import OtherProjects  from '@components/Home/otherProjects'
 import ContactUs  from '@components/Home/contactUs'
 const Main = (props = {}) => {
   return (
@@ -10,6 +11,7 @@ const Main = (props = {}) => {
       <About />
       <Experience />
       <MainProjects />
+      <OtherProjects />
       <ContactUs />
     </section>
   );

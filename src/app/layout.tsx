@@ -1,13 +1,15 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import localFont from 'next/font/local'
 import { Inter, Fira_Mono} from 'next/font/google'
 import StoreProvider from '@redux/storeProvider'
 
 const inter = Inter({ subsets: ['latin'] })
-const fira = Fira_Mono({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
-  variable: '--font-fira'
+
+const SFMono = localFont({
+  src: './SFMono-Regular.woff2',
+  display: 'swap',
+  variable: '--font-SFMono'
 })
 
 export const metadata: Metadata = {
@@ -22,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${fira.variable}  bg-bg-grad`}>
+      <body className={`${inter.className} ${SFMono.variable}  bg-bg-grad`}>
         <StoreProvider>
           {children}
         </StoreProvider>

@@ -8,7 +8,7 @@ const MainProjects = () => {
   return (
     <section className="py-24 flex flex-col">
       <section className="mb-10 cursor-pointer flex items-center flex-row gap-3 font-bold transition-all duration-150 xs:w-full md:w-[75%]">
-        <p className="text-lightColor hover:text-themeColor text-opacity-90 text-3xl ">
+        <p className="text-lightColor hover:text-themeColor text-opacity-90 text-3xl">
           <span className="text-themeColor text-opacity-90 text-2xl font-normal mr-2">03.</span>Some Things I've Built</p>
         <span className="bg-darkColor h-[1px] flex-1"></span>
       </section>
