@@ -53,7 +53,23 @@ export const userSlice = createSlice({
           "Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of Defense, and more",
         ]
       },
-     }
+    },
+    mainProjects: {
+      'Halcyon Theme' : {
+        'imageLink': '/mainProject1.png',
+        'description' : 'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.',
+        'techAndTools': ['VS Code', 'Sublime Text', 'Atom', 'iTerm2', 'Hyper'],
+        'githubLink': 'www.github.com',
+        'projectLink': 'www.project.com',
+      },
+      'Halcyon Theme' : {
+        'imageLink': '/mainProject1.png',
+        'description' : 'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.',
+        'techAndTools': ['VS Code', 'Sublime Text', 'Atom', 'iTerm2', 'Hyper'],
+        'githubLink': 'www.github.com',
+        'projectLink': 'www.project.com',
+      },
+    },
   },
   reducer: {},
 })

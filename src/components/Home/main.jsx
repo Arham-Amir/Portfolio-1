@@ -1,6 +1,7 @@
 import HeroSection  from '@components/Home/heroSection'
 import About  from '@components/Home/about'
 import Experience  from '@components/Home/experience'
+import MainProjects  from '@components/Home/mainProjects'
 import ContactUs  from '@components/Home/contactUs'
 const Main = (props = {}) => {
   return (
@@ -8,6 +9,7 @@ const Main = (props = {}) => {
       <HeroSection />
       <About />
       <Experience />
+      <MainProjects />
       <ContactUs />
     </section>
   );

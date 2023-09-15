@@ -16,6 +16,7 @@ const config: Config = {
         'lightColor' : '#ccd6f6',
         'darkColor' : '#8892b0',
         'bg-grad': '#0a192f',
+        'bg-light': '#112240',
       },
       screens:{
         'xs' : '0px',
