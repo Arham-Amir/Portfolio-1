@@ -56,19 +56,26 @@ export const userSlice = createSlice({
     },
     mainProjects: {
       'Halcyon Theme' : {
-        'imageLink': '/mainProject1.png',
+        'imageLink': "/mainProject1.avif",
         'description' : 'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.',
         'techAndTools': ['VS Code', 'Sublime Text', 'Atom', 'iTerm2', 'Hyper'],
         'githubLink': 'www.github.com',
         'projectLink': 'www.project.com',
-      },
-      'Halcyon Theme' : {
-        'imageLink': '/mainProject1.png',
-        'description' : 'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.',
-        'techAndTools': ['VS Code', 'Sublime Text', 'Atom', 'iTerm2', 'Hyper'],
+      },'Spotify Profile' : {
+        'imageLink': "/mainProject2.avif",
+        'description' : 'A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
+        'techAndTools': ['React', 'Styled Components', 'Express', 'Spotify API', 'Heroku'],
+        'githubLink': 'www.github.com',
+        'projectLink': 'www.project.com',
+      },'Build a Spotify Connected App' : {
+        'imageLink': "/mainProject3.avif",
+        'description' : `Having struggled with understanding how the Spotify OAuth flow works, I made the course I wish I could have had.
+        Unlike tutorials that only cover a few concepts and leave you with half-baked GitHub repositories, this course covers everything from explaining the principles of REST APIs to implementing Spotify's OAuth flow and fetching API data in a React app. By the end of the course, you’ll have an app deployed to the internet you can add to your portfolio.`,
+        'techAndTools': ['React', 'Express', 'Spotify API', 'Styled Components'],
         'githubLink': 'www.github.com',
         'projectLink': 'www.project.com',
       },
+
     },
   },
   reducer: {},

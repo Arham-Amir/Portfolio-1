@@ -14,6 +14,7 @@ const config: Config = {
       colors:{
         'themeColor' : '#64ffda',
         'lightColor' : '#ccd6f6',
+        'extraLightColor' : '#A8B2D1',
         'darkColor' : '#8892b0',
         'bg-grad': '#0a192f',
         'bg-light': '#112240',
