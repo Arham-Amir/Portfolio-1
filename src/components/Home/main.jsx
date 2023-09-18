@@ -6,7 +6,7 @@ import OtherProjects  from '@components/Home/otherProjects'
 import ContactUs  from '@components/Home/contactUs'
 const Main = (props = {}) => {
   return (
-    <section className={`${props.className} lg:mt-12 md:mt-6 xs:mt-4 mx-auto w-max`}>
+    <section className={`${props.className} mt-32 mx-auto w-max`}>
       <HeroSection />
       <About />
       <Experience />
