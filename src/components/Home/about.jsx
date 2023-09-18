@@ -1,14 +1,16 @@
 'use client'
 import { useState } from 'react';
 import { AiFillCaretRight } from 'react-icons/ai'
+import { useSelector } from 'react-redux';
 
 const About = (props = {}) => {
+
   return (
-    <section className={`h-auto xl:py-24 xs:py-20 w-full transition-all duration-150`}>
+    <section id='about' className={`h-auto xl:py-24 xs:py-20 w-full transition-all duration-150`}>
       <article className="h-full transition-all duration-150 xl:w-[90%] mx-auto flex flex-col xl:p-7">
         <section className="cursor-pointer mb-10 flex items-center flex-row gap-3 font-bold transition-all duration-150 xs:w-full md:w-[58%]">
-          <p className="text-lightColor hover:text-themeColor text-opacity-90 text-3xl ">
-          <span className="text-themeColor text-opacity-90 text-xl mr-2">01.</span>About Me</p>
+          <p className="text-lightColor text-opacity-90 xs:text-xl smd:text-3xl">
+            <span className="text-themeColor text-opacity-90 font-themeFont  xs:text-base sm:text-lg smd:text-2xl mr-2">01.</span>About Me</p>
           <span className="bg-darkColor h-[1px] flex-1"></span>
         </section>
         <section className='flex transition-all duration-150 md:flex-row xs:flex-col xs:items-center md:items-start'>
@@ -25,44 +27,21 @@ const About = (props = {}) => {
 export default About;
 
 const AboutLeft = (props = {}) => {
+  const { about } = useSelector(state => state.userInfo)
+
   return (
     <section className={`${props.className} flex flex-col text-lightColor gap-10`}>
       <section className="flex flex-col gap-5 text-darkColor">
-        <p>Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</p>
-        <p>Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.</p>
-        <p>I also recently launched a course that covers everything you need to build a web app with the Spotify API using Node & React.</p>
-        <p>Here are a few technologies I’ve been working with recently:</p>
-        <section className='flex flex-col gap-2'>
-          <section className='flex flex-row gap-2 text-darkColor'>
-            <section className='flex flex-row items-center gap-2 w-48'>
-              <AiFillCaretRight size={12} fill="#64ffda" />
-              <p className='text-sm'>JavaScript (ES6+)</p>
-            </section>
-            <section className='flex flex-row items-center gap-2 w-48'>
-              <AiFillCaretRight size={12} fill="#64ffda" />
-              <p className='text-sm'>TypeScript</p>
-            </section>
-          </section>
-          <section className='flex flex-row gap-2 text-darkColor'>
-            <section className='flex flex-row items-center gap-2 w-48'>
-              <AiFillCaretRight size={12} fill="#64ffda" />
-              <p className='text-sm'>React</p>
-            </section>
-            <section className='flex flex-row items-center gap-2 w-48'>
-              <AiFillCaretRight size={12} fill="#64ffda" />
-              <p className='text-sm'>Eleventy</p>
-            </section>
-          </section>
-          <section className='flex flex-row gap-2 text-darkColor'>
-            <section className='flex flex-row items-center gap-2 w-48'>
-              <AiFillCaretRight size={12} fill="#64ffda" />
-              <p className='text-sm'>Node.js</p>
-            </section>
-            <section className='flex flex-row items-center gap-2 w-48'>
-              <AiFillCaretRight size={12} fill="#64ffda" />
-              <p className='text-sm'>WordPress</p>
-            </section>
-          </section>
+        {about.detail.map((el, i) => {
+          return <p key={i}>{el}</p>
+        })}
+        <section className='grid grid-cols-2 gap-y-2 sm:w-11/12 text-darkColor'>
+        {about.toolsAndTech.map((el, i) => {
+          return <section key={i} className='flex flex-row items-center gap-2'>
+          <AiFillCaretRight className= "text-sm" fill="#64ffda" />
+          <p className='text-sm'>{el}</p>
+        </section>
+        })}
         </section>
       </section>
 
