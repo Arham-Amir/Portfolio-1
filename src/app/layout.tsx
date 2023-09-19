@@ -11,6 +11,21 @@ const SFMono = localFont({
   display: 'swap',
   variable: '--font-SFMono'
 })
+const calibre = localFont({
+  src: [
+    {
+      path: './Calibre-Regular-b0d4cbb1201155ddccc21d1b8059a670.woff2',
+    },
+    {
+      path: './Calibre-Semibold-94fc73852539d6733dc0d80252c5e3fb.woff2',
+    },
+    {
+      path: './Calibre-Medium-568dce56f869a519a015d3b69443b067.woff2',
+    },
+  ],
+  display: 'swap',
+  variable: '--font-calibre'
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -24,7 +39,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${SFMono.variable}  bg-bg-grad`}>
+      <body className={`${inter.className} ${SFMono.variable} ${calibre.variable}  bg-bg-grad custom-scrollbarY`}>
         <StoreProvider>
           {children}
         </StoreProvider>

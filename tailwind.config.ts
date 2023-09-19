@@ -9,11 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        'themeFont': ['var(--font-SFMono)']
+        sans: ['var(--font-calibre)'],
+        'themeFont': ['var(--font-SFMono)'],
       },
       colors: {
         'themeColor': '#64ffda',
-        'lightColor': '#ccd6f6',
+        'lightColor': '#CCD6F6',
         'extraLightColor': '#A8B2D1',
         'darkColor': '#8892b0',
         'bg-grad': '#0a192f',

@@ -35,7 +35,7 @@ const Navbar = () => {
   }, [prevScrollPos, goingUp]);
 
   return (
-    <section ref={navRef} className="transition-all duration-200 w-full z-50 h-[17vh] px-2 bg-bg-grad/90 fixed top-0 backdrop-blur-md">
+    <section ref={navRef} className="transition-all duration-200 w-full z-50 h-[16vh] px-2 bg-bg-grad/90 fixed top-0 backdrop-blur-md">
       <section className=" h-full flex items-center text-themeColor justify-between">
         <h1 className="2xl:pl-16 pl-10 xs:-translate-x-6 md:-translate-x-0 duration-200">
           <svg className="h-[50px] 2xl:h-[60px] hover:-translate-x-1 hover:-translate-y-1 ease-in-out transition duration-300 cursor-pointer"

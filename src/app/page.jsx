@@ -9,7 +9,7 @@ export default function Home() {
     <main className='max-w-[100vw] overflow-x-hidden'>
       <Navbar />
       <PageBottom />
-      <Main className='xs:w-full md:max-w-[82vw] xs:px-8 sm:px-12 smd:px-14 lg:px-14 transition-all duration-200'></Main>
+      <Main className='xs:w-full md:max-w-[82vw] 2xl:max-w-[66vw] 3xl:max-w-[50vw] xs:px-8 sm:px-12 smd:px-14 lg:px-14 transition-all duration-200'></Main>
       <Footer className='xs:w-full' ></Footer>
     </main>
   )

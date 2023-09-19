@@ -12,7 +12,11 @@
 }
 
 @layer utilities {
-
+  .flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .text-verticle {
     writing-mode: vertical-rl;
   }
@@ -28,6 +32,19 @@
 
   .custom-scrollbar::-webkit-scrollbar-thumb {
     @apply bg-slate-500;
+    border-radius: 4px;
+  }
+  /* scrollbar start  */
+  .custom-scrollbarY {
+    overflow-y: scroll;
+  }
+
+  .custom-scrollbarY::-webkit-scrollbar {
+    @apply w-[6px] h-2;
+  }
+
+  .custom-scrollbarY::-webkit-scrollbar-thumb {
+    @apply bg-darkColor;
     border-radius: 4px;
   }
 

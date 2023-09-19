@@ -6,7 +6,7 @@ const ExperienceDetails = (props = {}) => {
       {props.data.map((el, i) => (
         <section key={i} className='flex flex-row items-start gap-3 xs:w-[100%] lg:w-4/5'>
           <AiFillCaretRight className='mt-1' size={12} fill="#64ffda" />
-          <p className='text-sm w-fit'>{el}</p>
+          <p className='text-[15px] 2xl:text-lg leading-6 w-fit'>{el}</p>
         </section>
       ))}
 
