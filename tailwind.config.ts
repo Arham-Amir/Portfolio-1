@@ -9,7 +9,6 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-calibre)'],
         'themeFont': ['var(--font-SFMono)'],
       },
       colors: {

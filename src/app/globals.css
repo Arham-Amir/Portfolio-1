@@ -63,4 +63,18 @@
     @apply bg-themeColor/20 hover:-z-10 transition-all duration-100 ease-in-out;
     z-index: 3;
   }
+  .image-container1 {
+    position: relative;
+  }
+
+  .image-container1::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    width: 100%;
+    height: 100%;
+    @apply bg-themeColor/30 hover:-z-30 hover:h-0 transition-all duration-100 ease-in-out;
+    z-index: 3;
+  }
 }

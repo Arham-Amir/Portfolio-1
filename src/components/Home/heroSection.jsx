@@ -5,8 +5,8 @@ const HeroSection = (props = {}) => {
   const { userInfo } = useSelector(state => state.userInfo)
 
   return (
-    <section className="h-[83vh] flex-center">
-      <section className={`${props.className} w-fit text-lightColor flex flex-col gap-7`}>
+    <section className="xs:h-[88vh] smd:h-[83vh] flex-center">
+      <section className={`${props.className} w-fit text-lightColor flex flex-col gap-7 pb-24`}>
         <p className="text-themeColor/90 font-themeFont 2xl:text-2xl">Hi, my name is </p>
         <section className="">
           <h1 className="font-sans text-lightColor mb-3 xs:text-4xl md:text-5xl lg:text-[56px] xl:text-[68px] 2xl:text-[90px] font-bold">{userInfo.name}</h1>

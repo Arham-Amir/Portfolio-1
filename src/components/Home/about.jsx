@@ -52,15 +52,12 @@ const AboutLeft = (props = {}) => {
 }
 
 const AboutRight = (props = {}) => {
-  const [hover, setHover] = useState(false)
   return (
     <section className={`${props.className} transition-all duration-150 md:pl-9 xl:pl-16 md:mt-5 xs:mt-20`}>
       <section className={`border-2 transition-all duration-200 border-themeColor  h-auto w-auto rounded-md
-      ${hover && 'translate-x-1 translate-y-1'}`}>
+      group/item hover:translate-x-1 hover:translate-y-1 image-container1`}>
         <img className='rounded-md transition-all duration-200 grayscale-[100] -translate-x-3 -translate-y-3
-        hover:grayscale-0 hover:-translate-x-5 hover:-translate-y-5' src="/me.avif" alt="image"
-          onMouseEnter={() => setHover(true)}
-          onMouseLeave={() => setHover(false)}
+        hover:grayscale-0 group-hover/item:-translate-x-5 group-hover/item:-translate-y-5' src="/me.avif" alt="image"
         />
       </section>
     </section>
