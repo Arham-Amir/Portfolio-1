@@ -12,7 +12,7 @@ const fadeInAnimationVarients = {
     y: 0,
     transition: {
       delay: 0.1 * index,
-      duration: 0.2
+      duration: 0.3
     }
   })
 }
