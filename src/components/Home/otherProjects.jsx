@@ -3,6 +3,29 @@ import { useState } from 'react';
 import { CiFolderOn } from 'react-icons/ci'
 import { BsBoxArrowUpRight } from 'react-icons/bs'
 import { useSelector } from 'react-redux';
+import { motion } from 'framer-motion'
+
+const fadeInAnimationVarients = {
+  initial: {
+    opacity: 0,
+    y: 20,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.6,
+      duration: 0.4
+    }
+  },
+  animate1: (index) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: index
+    }
+  })
+}
 
 const OtherProjects = () => {
   const [showMore, setShowMore] = useState(false);
@@ -11,21 +34,68 @@ const OtherProjects = () => {
   return (
     <section className="py-24 flex flex-col gap-8 justify-center items-center w-full">
       <section className="flex flex-col gap-5 items-center">
-        <h1 className="text-lightColor xs:text-xl smd:text-3xl 2xl:text-4xl 3xl:text-5xl font-bold">Other Noteworthy Projects</h1>
-        <p className="text-themeColor font-themeFont text-sm 2xl:text-lg">view the archive</p>
+        <motion.div
+          variants={fadeInAnimationVarients}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className="list-none">
+          <h1 className="text-lightColor xs:text-xl smd:text-3xl 2xl:text-4xl 3xl:text-5xl font-bold">Other Noteworthy Projects</h1>
+        </motion.div>
+        <motion.div
+          variants={fadeInAnimationVarients}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className="list-none">
+          <p className="text-themeColor font-themeFont text-sm 2xl:text-lg">view the archive</p>
+        </motion.div>
       </section>
       <section className="grid gap-5 xs:grid-cols-1 smd:grid-cols-2  xl:grid-cols-3 transition-all duration-200">
         {miniProjects.map((el, i) => {
           if (showMore == false && i < 6) {
-            return <Card key={i} el={el} />
+            return <motion.div key={i}
+              variants={fadeInAnimationVarients}
+              initial="initial"
+              whileInView="animate1"
+              custom={(1 + i * 0.05)}
+              viewport={{
+                once: true,
+              }}
+              className="list-none">
+              <Card el={el} />
+            </motion.div>
           }
           else if (showMore == true)
-            return <Card key={i} el={el} />
+            return <motion.div key={i}
+              variants={fadeInAnimationVarients}
+              initial="initial"
+              whileInView="animate1"
+              custom={(i * 0.05)}
+              viewport={{
+                once: true,
+              }}
+              className="list-none">
+              <Card el={el} />
+            </motion.div>
         })}
       </section>
-      <section className="bg-themeColor mt-8 rounded-md w-max">
-        <button onClick={() => setShowMore(!showMore)} className="border w-fit px-7 py-5 bg-bg-grad border-themeColor text-themeColor/90 rounded-md font-themeFont text-xs 2xl:text-2xl transition ease-in-out duration-300 hover:-translate-x-1 hover:-translate-y-1">{showMore ? 'Show Less' : 'Show More'}</button>
-      </section>
+      <motion.div
+        variants={fadeInAnimationVarients}
+        initial="initial"
+        whileInView="animate"
+        viewport={{
+          once: true,
+        }}
+        className="list-none">
+        <section className="bg-themeColor mt-8 rounded-md w-max">
+          <button onClick={() => setShowMore(!showMore)} className="border w-fit px-7 py-5 bg-bg-grad border-themeColor text-themeColor/90 rounded-md font-themeFont text-xs 2xl:text-2xl transition ease-in-out duration-300 hover:-translate-x-1 hover:-translate-y-1">{showMore ? 'Show Less' : 'Show More'}</button>
+        </section>
+      </motion.div>
     </section >
   );
 }

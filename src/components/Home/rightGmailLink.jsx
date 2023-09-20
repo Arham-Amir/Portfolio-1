@@ -6,7 +6,7 @@ const RightGmailLink = (props = {}) => {
 
   return (
     <section className={`${props.className} gap-7`}>
-      <p className="text-verticle font-themeFont text-xs 2xl:text-base opacity-60 hover:opacity-100 hover:text-themeColor hover:-translate-y-1 tracking-widest">{userInfo['email']}</p>
+      <a href={`mailto:`+ userInfo['email']} className="text-verticle font-themeFont text-xs 2xl:text-base opacity-60 hover:opacity-100 hover:text-themeColor hover:-translate-y-1 tracking-widest">{userInfo['email']}</a>
       <span className="p-[1px] h-20 bg-white"></span>
     </section>
   );
