@@ -59,16 +59,6 @@ const NavLinks = (props = {}) => {
           <p className="text-themeColor text-opacity-90">04.</p>
           <Link href="#contact" onClick={() => props.showHam(false)} className="text-lightColor hover:text-themeColor">Contact</Link>
         </section></motion.li>
-      <motion.li
-        variants={fadeInAnimationVarients}
-        initial="initial"
-        animate="animate"
-        custom={4}
-        className="list-none">
-        <section className="bg-themeColor rounded-md">
-          <button className="hover:-translate-x-1 hover:-translate-y-1 bg-bg-grad ease-in-out transition duration-300 text-themeColor border-themeColor border px-5 py-3 rounded-md">Resume</button>
-        </section>
-      </ motion.li>
     </section>
   );
 }

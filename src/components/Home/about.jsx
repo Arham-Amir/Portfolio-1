@@ -12,13 +12,13 @@ const fadeInAnimationVarients = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.6,
+      delay: 0.3,
       duration: 0.4
     }
   }
 }
 
-const About = (props = {}) => {
+const   About = (props = {}) => {
 
   return (
     <motion.div
@@ -60,14 +60,7 @@ const AboutLeft = (props = {}) => {
         {about.detail.map((el, i) => {
           return <p key={i}>{el}</p>
         })}
-        <section className='grid grid-cols-2 gap-y-2 sm:w-11/12 text-darkColor'>
-          {about.toolsAndTech.map((el, i) => {
-            return <section key={i} className='flex flex-row gap-2'>
-              <AiFillCaretRight className="text-sm 2xl:text-base" fill="#64ffda" />
-              <p className='text-sm 2xl:text-base'>{el}</p>
-            </section>
-          })}
-        </section>
+
       </section>
 
 
@@ -82,7 +75,7 @@ const AboutRight = (props = {}) => {
       <section className={`border-2 transition-all duration-200 border-themeColor  h-auto w-auto rounded-md
       group/item hover:translate-x-1 hover:translate-y-1 image-container1`}>
         <img className='rounded-md transition-all duration-200 grayscale-[100] -translate-x-3 -translate-y-3
-        hover:grayscale-0 group-hover/item:-translate-x-5 group-hover/item:-translate-y-5' src="/me.avif" alt="image"
+        hover:grayscale-0 group-hover/item:-translate-x-5 group-hover/item:-translate-y-5' src="/arham.png" alt="image"
         />
       </section>
     </section>

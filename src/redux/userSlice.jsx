@@ -7,101 +7,90 @@ export const userSlice = createSlice({
     userInfo: {
       'name': 'Arham Amir',
       'detail': "I build things for the web.",
-      'description': "I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.",
+      'description': "I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at EpochClan.",
       'email': 'arhamamir424@gmail.com',
-      'github': 'https://www.github.com',
-      'instagram': 'https://www.instagram.com',
-      'twitter': 'https://www.twitter.com',
-      'linkedin': 'https://www.linkedin.com',
-      'codepen': 'https://www.codepen.com',
+      'github': 'https://github.com/Arham-Amir',
+      'instagram': 'https://www.instagram.com/arhammmm_amir/',
+      'linkedin': 'https://www.linkedin.com/in/arham-amir-51151b1bb/',
     },
     about: {
       'detail': [
-        "Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!",
-        "Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.",
-        "I also recently launched a course that covers everything you need to build a web app with the Spotify API using Node & React.",
-        "Here are a few technologies I’ve been working with recently:",
+        "Hello! My name is Arham, and I enjoy creating things that live on the internet. My interest in web development started back in 2020 when I decided to make an e-commerce website for our family business. It turns out that my interest in web development taught me a lot about HTML, CSS & JS!",
+        "Fast-forward to today, and I've had the privilege of working at an research center and a start-up. My main focus these days is building accessible, human-centered products at EpochClan for a variety of clients.",
+        "I also recently completed freelancing projects, which helped me cover more in-depth concepts of various web technologies and explore the strengths of these technologies.",
       ],
-      'toolsAndTech': ["JavaScript (ES6+)", "TypeScript", "React", "Eleventy", "Node.js", "WordPress"],
+    },
+    skills: {
+      "HTML": 90,
+      "CSS": 90,
+      "Tailwind-CSS": 90,
+      "mySql": 80,
+      "c++": 80,
+      "Python": 60,
+      "JavaScript (ES6+)": 75,
+      "React": 75,
+      "Next.js": 75,
+      "Git": 80,
+      "GitHub": 80,
+      "Firebase-Database": 85,
+      "Vercel": 85,
+      "Webflow": 85,
     },
     experiences: [
       {
-        'name': 'UpStatement',
-        'role': 'Lead Engineer',
-        'duration': 'May 2018 - Present',
+        'name': 'Epoch Clan',
+        'role': 'Junior Software Engineer',
+        'duration': 'May 2023 - Present',
         'description': [
-          'Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more',
-          'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
-          'Collaborate with designers, project managers, and other engineers to transform creative concepts into production realities for clients and stakeholders',
-          'Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship'
+          "Spearheaded the development of a React-based Weather Forecasting App, showcasing advanced web development proficiency. The application seamlessly integrates live data, providing users with accurate and up-to-date weather information.",
+          "Contributed significantly to the creation of a News App using React, ensuring precise live data display and enhancing user experience.",
+          "Demonstrated expertise in project management by efficiently handling diverse company projects. Resolved real-time web project tickets with precision, leveraging the Next.js framework for seamless issue resolution."
         ]
       },
       {
-        'name': 'Apple',
-        'role': 'UI Engineer Co-op',
-        'duration': 'July - December 2017',
+        'name': 'TechnoGenics',
+        'role': 'Software Engineer Intern',
+        'duration': 'August - November 2021',
         'description': [
-          "Developed and styled interactive web applications for Apple Music using Ember and SCSS",
-          "Built and shipped the Apple Music Extension for Facebook Messenger leveraging third-party and internal API integrations",
-          "Architected and implemented the user interface of Apple Music's embeddable web player widget for in-browser user authorization and full song playback",
-          "Contributed extensively to the creation of MusicKit JS, a public-facing JavaScript SDK for embedding Apple Music players into web applications",
+          "Successfully executed a medium-level machine learning project to classify tweets, showcasing a high level of Python proficiency in the implementation of machine learning algorithms.",
+          "Independently developed a basic online store using Django during the internship, honing web development skills and demonstrating the ability to work autonomously.",
+          "Actively participated in code reviews and implemented feedback, contributing to enhanced code quality in both machine learning and web development projects."
         ]
       },
       {
-        'name':  'Scout Studio',
-        'role': 'Developer',
-        'duration': 'Spring 2016 & 2017',
+        'name': 'Fiver',
+        'role': 'Freelancer',
+        'duration': 'August 2021 - Present',
         'description': [
-          "Collaborated with other student designers and engineers on pro-bono projects to create new brands, design systems, and websites for organizations in the community",
-          "Built and delivered technical solutions according to stakeholder business requirements",
+          "Completed a diverse range of freelance web projects, underscoring versatility in tackling different challenges and requirements.",
+          "Developed a customized high-level web application for a construction group in Pakistan. The application features a comprehensive cost calculator, providing accurate estimates on land sizes and areas. It incorporates up-to-date pricing information, thereby enhancing efficiency in construction planning."
         ]
-      },
-      {
-        'name': 'Starry',
-        'role': 'Software Engineer Co-op',
-        'duration': 'July - December 2016',
-        'description': [
-          "Engineered and improved major features of Starry's customer-facing Android web app using ES6, Handlebars, Backbone, Marionette, and CSS",
-          "Proposed and implemented scalable solutions to issues identified with cloud services and applications responsible for communicating with the Starry Station internet router",
-          "Collaborated with designers and other developers to ensure thoughtful and consistent user experiences across Starry’s iOS and Android mobile apps",
-        ]
-      },
-      {
-        'name': 'MullenLowe',
-        'role': 'Creative Technologist Co-op',
-        'duration': 'July - December 2015',
-        'description': [
-          "Developed, maintained, and shipped production code for client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
-          "Performed quality assurance tests on various sites to ensure cross-browser compatibility and mobile responsiveness",
-          "Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of Defense, and more",
-        ]
-      },
+      }
     ],
     mainProjects: [
       {
-        'name': 'Halcyon Theme',
-        'imageLink': "/mainProject1.avif",
-        'description': 'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.',
-        'techAndTools': ['VS Code', 'Sublime Text', 'Atom', 'iTerm2', 'Hyper'],
-        'githubLink': 'https://www.github.com',
-        'projectLink': 'https://www.project.com',
+        'name': 'Promo Developers',
+        'imageLink': "/mainProject2.png",
+        'description': 'A comprehensive cost calculator, offering accurate estimates for various land sizesand areas. It includes up-to-date pricing information for materials and labor, enhancing efficiency in construction planning. Users get construction rates for any land size with one click.',
+        'techAndTools': ['Next.js', 'Tailwind-CSS', 'Firebase-Database', 'DaisyUI'],
+        'githubLink': 'https://github.com/Arham-Amir',
+        'projectLink': 'https://www.promodevelopers.com/',
       },
       {
-        'name': 'Spotify Profile',
-        'imageLink': "/mainProject2.avif",
-        'description': 'A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
-        'techAndTools': ['React', 'Styled Components', 'Express', 'Spotify API', 'Heroku'],
-        'githubLink': 'https://www.github.com',
-        'projectLink': 'https://www.project.com',
+        'name': 'Promo Brick',
+        'imageLink': "/mainProject1.png",
+        'description': 'An online marketplace offering premium-quality bricks for purchase, catering to customers across Pakistan. International shipping options are also available for customers outside Pakistan.',
+        'techAndTools': ['Next.js', 'Tailwind-CSS', 'Firebase-Database', 'DaisyUI'],
+        'githubLink': 'https://github.com/Arham-Amir',
+        'projectLink': 'https://www.promobrick.com/',
       },
       {
-        'name': 'Build a Spotify Connected App',
-        'imageLink': "/mainProject3.avif",
-        'description': `Having struggled with understanding how the Spotify OAuth flow works, I made the course I wish I could have had.
-        Unlike tutorials that only cover a few concepts and leave you with half-baked GitHub repositories, this course covers everything from explaining the principles of REST APIs to implementing Spotify's OAuth flow and fetching API data in a React app. By the end of the course, you’ll have an app deployed to the internet you can add to your portfolio.`,
-        'techAndTools': ['React', 'Express', 'Spotify API', 'Styled Components'],
-        'githubLink': 'https://www.github.com',
-        'projectLink': 'https://www.project.com',
+        'name': 'Weather App',
+        'imageLink': "/mainProject3.png",
+        'description': `Designed a responsive weather forecast website displaying current conditions and five-day predictions. Users can search for weather in any location, save favorites for easy access.`,
+        'techAndTools': ['ReactJS', 'Tailwind-CSS', 'OpenWeatherMap-API'],
+        'githubLink': 'https://github.com/Arham-Amir',
+        'projectLink': 'https://weatherapp-da0c1.web.app/',
       },
     ],
     miniProjects: [

@@ -14,7 +14,7 @@ const fadeInAnimationVarients = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.6,
+      delay: 0.2,
       duration: 0.4
     }
   },
@@ -52,7 +52,6 @@ const OtherProjects = () => {
             once: true,
           }}
           className="list-none">
-          <p className="text-themeColor font-themeFont text-sm 2xl:text-lg">view the archive</p>
         </motion.div>
       </section>
       <section className="grid gap-5 xs:grid-cols-1 smd:grid-cols-2  xl:grid-cols-3 transition-all duration-200">

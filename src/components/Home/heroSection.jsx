@@ -63,7 +63,7 @@ const HeroSection = (props = {}) => {
           custom={9}
           className="list-none">
           <section className="bg-themeColor mt-8 rounded-md w-max">
-            <button className="border w-fit px-7 py-5 bg-bg-grad border-themeColor text-themeColor/90 rounded-md font-themeFont text-sm 2xl:text-2xl transition duration-300 hover:-translate-x-1 hover:-translate-y-1 ease-in-out">Check out my course !</button>
+            <button className="border w-fit px-7 py-4 bg-bg-grad border-themeColor text-themeColor/90 rounded-md font-themeFont text-sm 2xl:text-2xl transition duration-300 hover:-translate-x-1 hover:-translate-y-1 ease-in-out">Resume</button>
           </section>
         </motion.li>
       </section>
