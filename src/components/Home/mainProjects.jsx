@@ -33,7 +33,7 @@ const MainProjects = () => {
         className="list-none">
         <section className="mb-10 cursor-pointer flex items-center flex-row gap-3 font-bold transition-all duration-150 xs:w-full md:w-[75%]">
           <p className="text-lightColor text-opacity-90 xs:text-xl smd:text-3xl 2xl:text-4xl 3xl:text-5xl">
-            <span className="text-themeColor text-opacity-90 font-themeFont xs:text-base sm:text-lg smd:text-2xl  2xl:text-2xl 3xl:text-3xl font-normal mr-2">03.</span>Some Things I've Built</p>
+            <span className="text-themeColor text-opacity-90 font-themeFont xs:text-base sm:text-lg smd:text-2xl  2xl:text-2xl 3xl:text-3xl font-normal mr-2">04.</span>Some Things I've Built</p>
           <span className="bg-darkColor h-[1px] flex-1"></span>
         </section>
       </motion.div>

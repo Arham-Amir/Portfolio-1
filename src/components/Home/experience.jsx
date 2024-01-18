@@ -41,7 +41,7 @@ const Experience = (props = {}) => {
         <article className="h-full transition-all duration-150 xs:w-full xl:w-[87%] flex flex-col xl:p-7">
           <section className="mb-10 cursor-pointer flex items-center flex-row gap-3 font-bold transition-all duration-150 xs:w-full md:w-[75%]">
             <p className="text-lightColor xs:text-xl smd:text-3xl 2xl:text-4xl 3xl:text-5xl">
-              <span className="text-themeColor font-themeFont  xs:text-base sm:text-lg font-normal smd:text-xl mr-2 2xl:text-2xl 3xl:text-3xl">02.</span>Where I've Worked</p>
+              <span className="text-themeColor font-themeFont  xs:text-base sm:text-lg font-normal smd:text-xl mr-2 2xl:text-2xl 3xl:text-3xl">03.</span>Where I've Worked</p>
             <span className="bg-darkColor h-[1px] flex-1"></span>
           </section>
           <section ref={scope} className="flex xs:flex-col smd:flex-row text-darkColor gap-6">

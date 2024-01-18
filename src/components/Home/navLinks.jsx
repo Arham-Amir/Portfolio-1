@@ -37,8 +37,9 @@ const NavLinks = (props = {}) => {
         className="list-none">
         <section className="cursor-pointer flex xs:flex-col items-center md:flex-row gap-2">
           <p className="text-themeColor text-opacity-90">02.</p>
-          <Link href="#experience" onClick={() => props.showHam(false)} className="text-lightColor hover:text-themeColor">Experience</Link>
-        </section></motion.li>
+          <Link href="#skills" onClick={() => props.showHam(false)} className="text-lightColor hover:text-themeColor">Skills</Link>
+        </section>
+      </motion.li>
       <motion.li
         variants={fadeInAnimationVarients}
         initial="initial"
@@ -47,13 +48,25 @@ const NavLinks = (props = {}) => {
         className="list-none">
         <section className="cursor-pointer flex xs:flex-col items-center md:flex-row gap-2">
           <p className="text-themeColor text-opacity-90">03.</p>
-          <Link href="#work" onClick={() => props.showHam(false)} className="text-lightColor hover:text-themeColor">Work</Link>
-        </section></motion.li>
+          <Link href="#experience" onClick={() => props.showHam(false)} className="text-lightColor hover:text-themeColor">Experience</Link>
+        </section>
+      </motion.li>
       <motion.li
         variants={fadeInAnimationVarients}
         initial="initial"
         animate="animate"
         custom={3}
+        className="list-none">
+        <section className="cursor-pointer flex xs:flex-col items-center md:flex-row gap-2">
+          <p className="text-themeColor text-opacity-90">03.</p>
+          <Link href="#work" onClick={() => props.showHam(false)} className="text-lightColor hover:text-themeColor">Work</Link>
+        </section>
+      </motion.li>
+      <motion.li
+        variants={fadeInAnimationVarients}
+        initial="initial"
+        animate="animate"
+        custom={4}
         className="list-none">
         <section className="cursor-pointer flex xs:flex-col items-center md:flex-row gap-2">
           <p className="text-themeColor text-opacity-90">04.</p>
