@@ -95,52 +95,46 @@ export const userSlice = createSlice({
     ],
     miniProjects: [
       {
-        "title": "Integrating Algolia Search with WordPress Multisite",
-        "description": "Building a custom multisite compatible WordPress plugin to build global search with Algolia",
-        "tech": ["Algolia", "Wordpress", "PHP"],
-        'link': "https://www.google.com"
+        "title": "Promo Garlic",
+        "description": "A website dedicated to keeping garlic clients updated with the latest processing information and providing comprehensive details about G1 garlic in Pakistan.",
+        "tech": ['Next.js', 'Tailwind-CSS', 'DaisyUI'],
+        'link': "https://www.promogarlic.com/"
       },
       {
-        "title": "Time to Have More Fun",
-        "description": "A single page web app for helping me choose where to travel, built with Next.js, Firebase, and Tailwind CSS",
-        "tech": ["Next.js", "Tailwind CSS", "Firebase"],
-        'link': "https://www.google.com"
+        "title": "Promo Group",
+        "description": "A SPW to showcase all the businesses of a promo group, offering services in Pakistan and worldwide",
+        "tech": ['Next.js', 'Tailwind-CSS', 'DaisyUI'],
+        'link': "https://www.promogroup.com.pk/"
       },
       {
-        "title": "Building a Headless Mobile App CMS From Scratch",
-        "description": "Find out how we built a custom headless CMS with Node, Express, and Firebase for a project at Upstatement",
-        "tech": ["Node", "Express", "Firebase", "Vue"],
-        'link': "https://www.google.com"
+        "title": "News App",
+        "description": "To stay updated on trending news across all topics, find out what's trending.",
+        "tech": ['Next.js', 'Tailwind-CSS', 'DaisyUI'],
+        'link': "https://github.com/Arham-Amir/News-App"
       },
       {
-        "title": "OctoProfile",
-        "description": "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
-        "tech": ["Next.js", "Chart.js", "Github API"],
-        'link': "https://www.google.com"
+        "title": "Sentiment-Analysis-of-Tweets",
+        "description": "The website gives you a tweet-by-tweet analysis under three categories (Political, Sports, Entertainment) and displays the result on a pie chart. You can do analysis on any number of tweets you want.",
+        "tech": ["Python", "Django", "ML"],
+        'link': "https://github.com/Arham-Amir/Sentiment-Analysis-of-Tweets"
       },
       {
-        "title": "Google Keep Clone",
-        "description": "A simple Google Keep clone built with Vue and Firebase.",
-        "tech": ["Vue", "Firebase"],
-        'link': "https://www.google.com"
+        "title": "PhoneHub",
+        "description": "This a phone related website where you can find the phone you need. You can see all the phones launched by any brand here & have a look on their detailed specifications also order it too.",
+        "tech": ["Python", "Django", "JavaScript"],
+        'link': "https://github.com/Arham-Amir/PhoneHub"
       },
       {
-        "title": "Apple Music Embeddable Web Player Widget",
-        "description": "Embeddable web player widget for Apple Music that lets users log in and listen to full song playback in the browser leveraging",
-        "tech": ["MusicKit.js", "JS", "CSS"],
-        'link': "https://www.google.com"
+        "title": "Responsive-Calculator",
+        "description": "Build a responsive calculator with day & night modes to practice basic DOM operations and javascript",
+        "tech": ["HTML", "CSS", "JS"],
+        'link': "https://arham-amir.github.io/Responsive-Calculator/"
       },
       {
-        "title": "Apple Music Facebook Messenger Integration",
-        "description": "Facebook Messenger chat bot extension featuring authentication and full song streaming from within the Messenger app.",
-        "tech": ["Ember", "JS", "SCSS"],
-        'link': "https://www.google.com"
-      },
-      {
-        "title": "Personal Website V3",
-        "description": "Third iteration of my personal website built with Jekyll and hosted on GitHub Pages.",
-        "tech": ["Jekyll", "SCSS", "JS"],
-        'link': "https://www.google.com"
+        "title": "Spitfire Home Design",
+        "description": "A static website for home builder to showcase their services to the world.",
+        "tech": ["HTML", "SCSS"],
+        'link': "https://arham-amir.github.io/HomeDesignProject/"
       },
     ]
   },

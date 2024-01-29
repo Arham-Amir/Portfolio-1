@@ -13,7 +13,7 @@ const Main = (props = {}) => {
       <Skills />
       <Experience />
       <MainProjects />
-      {/* <OtherProjects /> */}
+      <OtherProjects />
       <ContactUs />
     </section>
   );
